@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Central Racquet Club | Indoor Tennis Courts in Waterloo Region
+    </title>
+    <meta
+      name="description"
+      content="Indoor Tennis Club servicing the Waterloo Region, including Kitchener, Cambridge and Guelph."
+    />
+    <link rel="icon" type="image/png" href="assets/crc_favicon.png" />
+    <link rel="apple-touch-icon" href="assets/crc_favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <div class="site-shell">
+      <header class="topbar">
+        <a href="#top" class="brand" aria-label="Central Racquet Club homepage">
+          <span class="brand__word" aria-hidden="true">CRC</span>
+          <img
+            class="brand__logo"
+            src="assets/CRC_logo.png"
+            alt=""
+            width="1024"
+            height="1024"
+            loading="eager"
+            decoding="async"
+          />
+          <span class="sr-only">Central Racquet Club</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="menu-toggle__icon" aria-hidden="true">
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+            <span class="menu-toggle__bar"></span>
+          </span>
+          <span class="sr-only">Toggle navigation menu</span>
+        </button>
+
+        <nav id="site-nav" class="topbar__nav" aria-label="Main navigation">
+          <a href="#club">Club</a>
+          <a href="#who-we-are">Who We Are</a>
+          <a href="#services">Services</a>
+          <a href="#location">Location</a>
+          <a href="#contact">Contact</a>
+          <a href="#newsletter" class="button button--ghost">Newsletter</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero panel" data-reveal>
+          <img
+            class="hero__image"
+            src="assets/court.png"
+            alt="Indoor tennis courts at Central Racquet Club."
+            width="2293"
+            height="1359"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="hero__overlay" aria-hidden="true"></div>
+
+          <div class="hero__content">
+            <p class="eyebrow">Welcome to</p>
+            <h1 class="hero__title">Central Racquet Club</h1>
+            <p class="hero__lede">
+              Play more. Train better. Enjoy access to top-quality indoor tennis
+              courts in the heart of Waterloo Region. Opening Spring/Summer
+              2026.
+            </p>
+
+            <form
+              class="newsletter-form newsletter-form--hero"
+              action="https://formsubmit.co/admin@centralracquetclub.ca"
+              method="POST"
+              data-source="Hero Newsletter"
+              novalidate
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="CRC Newsletter Sign-Up"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="source" value="Hero Newsletter" />
+
+              <label class="sr-only" for="hero-email">Email Address</label>
+              <div class="newsletter-form__row">
+                <input
+                  id="hero-email"
+                  name="email"
+                  type="email"
+                  inputmode="email"
+                  autocomplete="email"
+                  placeholder="Enter your email for newsletter updates"
+                  required
+                />
+                <button type="submit" class="button button--primary">
+                  Subscribe
+                </button>
+              </div>
+              <p class="newsletter-form__meta">Get early access + updates.</p>
+              <p class="newsletter-form__status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <section id="club" class="panel section section--split" data-reveal>
+          <div class="section__intro">
+            <p class="eyebrow">About The Club</p>
+            <h2>Modern indoor tennis in Maryhill.</h2>
+            <p>
+              We offer access to indoor tennis courts conveniently located in
+              Maryhill, perfectly situated between Guelph, Waterloo, Kitchener
+              and Cambridge. Our state-of-the-art facility provides a
+              comfortable, year-round playing environment designed for players
+              of all levels. Whether you are looking to train seriously or play
+              recreationally at any hour, our club offers modern courts with
+              easy access and a welcoming atmosphere focused on the game. Play
+              when you want, train how you want and enjoy tennis without limits.
+            </p>
+            <p>
+              Join our mailing list for the latest updates and club news. Sign
+              up through the newsletter form to stay informed.
+            </p>
+          </div>
+
+          <figure class="media-card">
+            <img
+              src="assets/responsive/club-exterior-1024.webp"
+              srcset="
+                assets/responsive/club-exterior-640.webp   640w,
+                assets/responsive/club-exterior-1024.webp 1024w,
+                assets/responsive/club-exterior-1536.webp 1536w
+              "
+              sizes="(max-width: 1024px) 100vw, 45vw"
+              alt="A indoor tennis building with metal siding, purple trim, and a peaked roof."
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </section>
+
+        <section
+          id="who-we-are"
+          class="panel section section--about"
+          data-reveal
+        >
+          <div class="section__intro">
+            <p class="eyebrow">Who We Are</p>
+            <h2>Who we are</h2>
+            <p>
+              Located in Maryhill at the heart of Waterloo Region, our tennis
+              club offers easy access for players from
+              <strong>Waterloo, Kitchener, Guelph and Cambridge</strong>. We are
+              proud to be a welcoming home for tennis enthusiasts of all ages
+              and skill levels from beginners picking up a racquet for the first
+              time to competitive players looking to sharpen their game. With
+              access, top-quality courts, and a friendly community, our club is
+              a place where great tennis and great connections come together on
+              your schedule.
+            </p>
+            <p>
+              <strong
+                ><u>Membership opportunities will be launching soon.</u></strong
+              >
+              With a limited number of memberships available, we invite you to
+              join our mailing list to receive the most up-to-date information.
+              Sign up through our newsletter form to stay informed.
+            </p>
+          </div>
+
+          <div class="about-gallery" aria-label="Club atmosphere gallery">
+            <figure class="media-card about-gallery__item">
+              <img
+                src="assets/responsive/about-player-1-720.webp"
+                srcset="
+                  assets/responsive/about-player-1-420.webp   420w,
+                  assets/responsive/about-player-1-720.webp   720w,
+                  assets/responsive/about-player-1-1024.webp 1024w
+                "
+                sizes="(max-width: 760px) 100vw, (max-width: 1024px) 50vw, 31vw"
+                alt="A woman standing on an indoor tennis court holding a tennis racket, wearing a sleeveless top, a tennis skirt, and carrying a tennis bag over her shoulder."
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="media-card about-gallery__item">
+              <img
+                src="assets/responsive/about-player-2-720.webp"
+                srcset="
+                  assets/responsive/about-player-2-420.webp   420w,
+                  assets/responsive/about-player-2-720.webp   720w,
+                  assets/responsive/about-player-2-1024.webp 1024w
+                "
+                sizes="(max-width: 760px) 100vw, (max-width: 1024px) 50vw, 31vw"
+                alt="A young man and woman standing on a tennis court, both dressed in tennis attire, holding tennis bags with a net behind them."
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+            <figure class="media-card about-gallery__item">
+              <img
+                src="assets/responsive/about-player-3-720.webp"
+                srcset="
+                  assets/responsive/about-player-3-420.webp   420w,
+                  assets/responsive/about-player-3-720.webp   720w,
+                  assets/responsive/about-player-3-1024.webp 1024w
+                "
+                sizes="(max-width: 760px) 100vw, (max-width: 1024px) 50vw, 31vw"
+                alt="A woman in black tennis attire and white cap standing on a tennis court holding a tennis racket inside an indoor tennis facility."
+                width="1024"
+                height="1536"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <section
+          id="services"
+          class="panel section section--split section--services"
+          data-reveal
+        >
+          <div class="section__intro">
+            <p class="eyebrow">What We Offer</p>
+            <h2>Membership Benefits</h2>
+            <p>
+              Members enjoy priority access and exclusive perks designed to
+              elevate their tennis experience both on and off the court.
+            </p>
+
+            <ul class="services-list">
+              <li>
+                <strong>Priority Court Booking</strong> with a
+                <strong>7-day advance booking window</strong>, giving members
+                first access to prime court times
+                <br />
+                <em
+                  >(Public and non-members are limited to a 3-day booking
+                  window)</em
+                >
+              </li>
+              <li>
+                <strong>Two complimentary guest passes per month</strong>,
+                perfect for inviting friends or family to play
+              </li>
+              <li>
+                <strong>Access to professional coaching</strong>, including
+                private lessons and structured training opportunities
+              </li>
+              <li>
+                <strong>Discounted court fees</strong> available exclusively to
+                members
+              </li>
+              <li>
+                <strong
+                  >Eligibility for club-run tournaments and ladder
+                  leagues</strong
+                >, fostering competitive play and community engagement
+              </li>
+              <li>
+                <strong>Access to tennis clinics and seasonal programs</strong>,
+                including youth programs and summer camps
+              </li>
+              <li>
+                <strong>Extended daily court access</strong>, offering
+                flexibility to play around your schedule
+              </li>
+              <li>And more exclusive benefits added throughout the year</li>
+            </ul>
+
+            <p>
+              Membership is designed to provide flexibility, value, and a
+              connected club experience, whether you are training competitively
+              or playing socially.
+            </p>
+          </div>
+
+          <figure class="media-card">
+            <img
+              src="assets/responsive/about-player-4-720.webp"
+              srcset="
+                assets/responsive/about-player-4-420.webp   420w,
+                assets/responsive/about-player-4-720.webp   720w,
+                assets/responsive/about-player-4-1024.webp 1024w
+              "
+              sizes="(max-width: 1024px) 100vw, 45vw"
+              alt="A purple tennis court with tennis balls, rackets, and the words Explore Our Services."
+              width="1024"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </section>
+
+        <section id="location" class="panel section section--split" data-reveal>
+          <a
+            class="media-card media-card--link"
+            href="https://www.google.com/maps/place/1303+Maryhill+Rd,+Maryhill,+ON+N0B+2B0/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open map for 1303 Maryhill Road"
+          >
+            <img
+              src="assets/responsive/location-map-760.webp"
+              srcset="
+                assets/responsive/location-map-420.webp   420w,
+                assets/responsive/location-map-760.webp   760w,
+                assets/responsive/location-map-1130.webp 1130w
+              "
+              sizes="(max-width: 1024px) 100vw, 45vw"
+              alt="Indoor Tennis Court in Waterloo, Kitchener, Guelph, and Cambridge, with highways and roads labeled."
+              width="1130"
+              height="948"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+
+          <div class="section__intro">
+            <p class="eyebrow">Location</p>
+            <h2>Easy access across Waterloo Region.</h2>
+            <p>
+              Our indoor tennis facility is located at
+              <strong>1303 Maryhill Road in Maryhill</strong>, offering
+              convenient access for players across the
+              <strong>Waterloo Region</strong>. We are just
+              <strong>10 minutes from Guelph</strong>,
+              <strong>15 minutes from Waterloo and Kitchener</strong>, and
+              <strong>25 minutes from Cambridge</strong>, making us an ideal
+              choice for anyone searching for
+              <strong>
+                indoor tennis courts near Waterloo, Guelph, Kitchener, or
+                Cambridge
+              </strong>
+              . Designed for year-round play, our modern courts provide a
+              comfortable environment for players of all levels looking for
+              reliable, high-quality indoor tennis close to home.
+            </p>
+          </div>
+        </section>
+
+        <section id="newsletter" class="panel cta-band" data-reveal>
+          <div class="cta-band__content">
+            <p class="eyebrow">Newsletter</p>
+            <h2>Get early access + updates.</h2>
+            <p>
+              Receive Central Racquet Club announcements, opening details, and
+              important club updates by email.
+            </p>
+          </div>
+
+          <form
+            class="newsletter-form newsletter-form--inline"
+            action="https://formsubmit.co/admin@centralracquetclub.ca"
+            method="POST"
+            data-source="Main Newsletter"
+            novalidate
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="CRC Newsletter Sign-Up"
+            />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="source" value="Main Newsletter" />
+
+            <label class="sr-only" for="newsletter-email">Email Address</label>
+            <div class="newsletter-form__row">
+              <input
+                id="newsletter-email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="your@email.com"
+                required
+              />
+              <button type="submit" class="button button--primary">
+                Join Newsletter
+              </button>
+            </div>
+            <p class="newsletter-form__status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer id="contact" class="footer panel">
+        <div class="footer__brand">
+          <p class="footer__name">Central Racquet Club</p>
+          <p>
+            Indoor Tennis Club servicing Waterloo, Kitchener, Cambridge and
+            Guelph.
+          </p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#top">Home</a>
+          <a href="#club">Club</a>
+          <a href="#who-we-are">Who We Are</a>
+          <a href="#services">Services</a>
+          <a href="#location">Location</a>
+          <a href="#newsletter">Newsletter</a>
+          <a
+            href="https://www.instagram.com/centralracquetclub/"
+            target="_blank"
+            rel="noreferrer"
+            >Instagram</a
+          >
+          <a
+            href="https://www.tiktok.com/@centralracquetclub"
+            target="_blank"
+            rel="noreferrer"
+            >TikTok</a
+          >
+        </nav>
+
+        <div class="footer__contact">
+          <h3>Contact</h3>
+          <a href="mailto:admin@centralracquetclub.ca"
+            >admin@centralracquetclub.ca</a
+          >
+          <a href="tel:+14373289315">(437) 328-9315</a>
+          <p>Location: 1303 Maryhill Rd., Maryhill</p>
+          <p>Ontario, N0B 2B0</p>
+        </div>
+
+        <form
+          class="newsletter-form newsletter-form--footer"
+          action="https://formsubmit.co/admin@centralracquetclub.ca"
+          method="POST"
+          data-source="Footer Newsletter"
+          novalidate
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="CRC Newsletter Sign-Up" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="source" value="Footer Newsletter" />
+
+          <label class="sr-only" for="footer-email">Email Address</label>
+          <div class="newsletter-form__row">
+            <input
+              id="footer-email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="Newsletter email"
+              required
+            />
+            <button type="submit" class="button button--primary">
+              Subscribe
+            </button>
+          </div>
+          <p class="newsletter-form__status" aria-live="polite"></p>
+        </form>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
