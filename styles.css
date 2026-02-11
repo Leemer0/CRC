@@ -475,6 +475,10 @@ section[id] {
 .cta-band {
   margin-top: 1rem;
   padding: clamp(1.2rem, 2.8vw, 2rem);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+  align-items: end;
   color: #fff;
   border-color: rgba(255, 255, 255, 0.18);
   background:
@@ -496,6 +500,10 @@ section[id] {
 
 .cta-band__content {
   max-width: 52ch;
+}
+
+.cta-band .newsletter-form {
+  margin-top: 0;
 }
 
 .newsletter-form {
@@ -711,6 +719,15 @@ section[id] {
 
   .footer {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-band {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .cta-band .newsletter-form {
+    margin-top: 0.8rem;
   }
 
   .newsletter-form--footer {

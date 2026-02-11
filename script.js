@@ -92,7 +92,7 @@ forms.forEach((form) => {
       return;
     }
 
-    setStatus(statusEl, "Submitting your newsletter sign-up...");
+    setStatus(statusEl, "Submitting your waitlist request...");
     submitButton.disabled = true;
 
     const source =
@@ -101,7 +101,7 @@ forms.forEach((form) => {
       "Website";
     const subject =
       form.querySelector('input[name="_subject"]')?.value ||
-      "CRC Newsletter Sign-Up";
+      "CRC Founding Waitlist";
     const endpoint = `https://formsubmit.co/ajax/admin@centralracquetclub.ca`;
 
     try {
@@ -133,7 +133,7 @@ forms.forEach((form) => {
       form.reset();
       setStatus(
         statusEl,
-        "Thank you. You are subscribed to Central Racquet Club newsletter updates.",
+        "You're in. You're on the Central Racquet Club Founding Waitlist.",
         "success",
       );
     } catch (error) {
